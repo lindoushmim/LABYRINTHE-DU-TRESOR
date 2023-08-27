@@ -1,14 +1,5 @@
 # projet LIFAPCD - Information
 
-Étudiant : <br>
-12213440 AHAMADA MMADI ISMAEL <br>
-12101844 CYRIL DEVAUX <br>
-11805862 LINDA CHOUATI
-
-identifiant du projet sur la forge : 
-https://forge.univ-lyon1.fr/p1805862/jeu30.git
-
-
 Labyrinthe du Trésor est jeu en C/C++ réalisé en deuxieme année de la licence informatique. 
 Le jeu se joue sur une console SDL. Le joueur doit atteindre le trésor se trouvant dans une piece afin de gagner. 
 

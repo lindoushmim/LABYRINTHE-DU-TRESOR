@@ -1,0 +1,331 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet:  Fichier source de src/Piece.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Projet de realisation d&#39;un jeu en 2D du LIFAPSD Lyon 1 2023</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Piece.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifndef _Piece_H_</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#define _Piece_H_</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;Porte.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;Obstacle.h&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;Mur.h&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;Monstre.h&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">enum</span> TypePiece </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    TYPE_1 = 1,</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    TYPE_2 = 2,</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    TYPE_3 = 3,</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    TYPE_4 = 4</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">enum</span> TypePotion <span class="comment">// pour ne pas recreer une autre structuer </span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    GRANDIR = 1,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    RETRECIR = 2,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    GAGNER_INVICIBILITE = 3, </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="structElement.html">   31</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structElement.html">Element</a></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="structElement.html#aa0e8753dd8f31939bb1aa38025e116e5">   34</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structElement.html#aa0e8753dd8f31939bb1aa38025e116e5">xElement</a>; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="structElement.html#ad582483e2d24aa34d9c738368f7c7e34">   37</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structElement.html#ad582483e2d24aa34d9c738368f7c7e34">yElement</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="structElement.html#a6cae6e31d667c0fe4641af8cbc76a6de">   40</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structElement.html#a6cae6e31d667c0fe4641af8cbc76a6de">tailleXElement</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="structElement.html#a01a60d770fa3160133772fc37057b895">   43</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structElement.html#a01a60d770fa3160133772fc37057b895">tailleYElement</a>; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classPiece.html">   48</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPiece.html">Piece</a></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">int</span> dimxP, dimyP; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    TypePiece type;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    TypePotion potionType; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">struct </span>Objet <span class="comment">// pour la potion </span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordtype">int</span> xObjet;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordtype">int</span> yObjet;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordtype">int</span> tailleXObjet;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordtype">int</span> tailleYObjet; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }objet;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="classPorte.html">Porte</a> tabPorte[4];</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">int</span> nbMonstre; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="classMonstre.html">Monstre</a> tabMonstre[4]; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="classMur.html">Mur</a> tabMur[10];  </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">int</span> nbMur;       </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="classObstacle.html">Obstacle</a> barre;  </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">bool</span> contientVie; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="structElement.html">Element</a> vieContient; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">bool</span> aPrisVie; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="code" href="structElement.html">Element</a> bombe; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">bool</span> contientBombe; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">int</span> xTresor, yTresor, tailleXTresor, tailleYTresor;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <a class="code" href="structElement.html">Element</a> potion;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">bool</span> contientPotion;  </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <a class="code" href="classPiece.html#ac57de5803bbad829b143bc7268267dc1">Piece</a>(); </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <a class="code" href="classPiece.html#ac57de5803bbad829b143bc7268267dc1">Piece</a>(<span class="keywordtype">int</span> dimensionXP, <span class="keywordtype">int</span> dimensionYP, TypePiece P, TypePotion Po); </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <a class="code" href="classPiece.html#a5d7a4f6bade94cb33b6f634de8aa7918">~Piece</a>(); </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    Objet <a class="code" href="classPiece.html#aeb0f0d7bd2967cf41b2d4b203c2082a9">getObjet</a>() <span class="keyword">const</span>; </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPiece.html#a9c000bf97bf61a91869d6cddc617f865">setObjet</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> l, <span class="keywordtype">int</span> h); </div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <a class="code" href="structElement.html">Element</a> &amp; <a class="code" href="classPiece.html#a04afd73570955f46bc7e34c2b45e16db">getElement</a>(); </div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPiece.html#a2fff5c5fb3272c1277e5a59cf404856b">setElement</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> l, <span class="keywordtype">int</span> h); </div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <a class="code" href="structElement.html">Element</a> &amp; <a class="code" href="classPiece.html#a15109c07d5eee8be648e01849f7ce28a">getBombe</a>(); </div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPiece.html#a55dc8273655747a94e9b64e6306596f4">setBombe</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> l, <span class="keywordtype">int</span> h); </div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <a class="code" href="structElement.html">Element</a> &amp; <a class="code" href="classPiece.html#a20542888abf9f933aa48834b6a325f17">getPotion</a>(); </div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPiece.html#a96c3aec43f0432e3be313937ebaa8500">setPotion</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> l, <span class="keywordtype">int</span> h); </div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPiece.html#a12f2f02888d9be4cc8c537010b4627db">setContientBombe</a>(<span class="keywordtype">bool</span> e); </div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="keywordtype">bool</span> &amp; <a class="code" href="classPiece.html#a837e8d1cc3371d4654e6ce44cbd487cc">getContientBombe</a>(); </div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160; </div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPiece.html#aee3935f7a1ff091225130862076c4ca2">setContientVie</a>(<span class="keywordtype">bool</span> e); </div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keywordtype">bool</span> &amp; <a class="code" href="classPiece.html#a5133dfac4e5de410c4b7632e904863be">getContientVie</a>(); </div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160; </div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPiece.html#a9decc9dd1a10a8460b759166aeae25b8">setAPrisVie</a>(<span class="keywordtype">bool</span> e); </div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keywordtype">bool</span> &amp; <a class="code" href="classPiece.html#aea817799ac6a8882f8f9d6371524e23b">getAPrisVie</a>(); </div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPiece.html#aa32244f1f36a9d21be9fbf890e3066a7">setContientPotion</a>(<span class="keywordtype">bool</span> e); </div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keywordtype">bool</span> &amp; <a class="code" href="classPiece.html#ad014f5c2d447148180dc11057cab2365">getContientPotion</a>(); </div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160; </div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classPiece.html#a7eda8b47c3875bce77a6b37c48d15f7f">getDimXP</a>() <span class="keyword">const</span>; </div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160; </div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classPiece.html#ad57c72b733ed27466b687d6fcb62385d">getDimYP</a>() <span class="keyword">const</span>; </div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160; </div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classPiece.html#aa3c47ef4f6244337bdd04c43ab8abe12">getNbMonstre</a>() <span class="keyword">const</span>; </div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160; </div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPiece.html#ac42ea83dac279f4a0efa56a457d28a43">setNbMonstre</a>(<span class="keywordtype">int</span> nb); </div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160; </div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    TypePiece <a class="code" href="classPiece.html#a13d28b164c3e29f3da09461aea2b44d5">getType</a>() <span class="keyword">const</span>; </div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160; </div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    TypePotion <a class="code" href="classPiece.html#a6fde7bca51d0a3a43a6410498fa01bfd">getTypePotion</a>() <span class="keyword">const</span>; </div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160; </div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <a class="code" href="classPorte.html">Porte</a>&amp; <a class="code" href="classPiece.html#a61b625adc8c4abf588a1ec29faaf7bc7">getPorte</a>(<span class="keywordtype">int</span> num);</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    </div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <a class="code" href="classPorte.html">Porte</a> <a class="code" href="classPiece.html#a61b625adc8c4abf588a1ec29faaf7bc7">getPorte</a>(<span class="keywordtype">int</span> num) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160; </div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <a class="code" href="classMur.html">Mur</a>&amp; <a class="code" href="classPiece.html#afd3cdc06b0a2553154861a74aae7064e">getMur</a>(<span class="keywordtype">int</span> indice);</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160; </div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classPiece.html#a7e0824ec389b9ae13e59ae04e1c4cb75">getNbMur</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160; </div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPiece.html#a846ef744ac73dd8054f5e99a516ddda0">setNbMur</a>(<span class="keywordtype">int</span> nb);</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160; </div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classPiece.html#af966feb72e3eb82f18e314ac51a45115">getXTresor</a>() <span class="keyword">const</span>; </div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160; </div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classPiece.html#a5e0e06c89d93b9995319abbb01b0da72">getYTresor</a>() <span class="keyword">const</span>; </div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160; </div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classPiece.html#a8efad6126e76a571515199b9517f3a19">getTailleXTresor</a>() <span class="keyword">const</span>; </div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160; </div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classPiece.html#aa4f8a1520f0880c42a29b4c1befda948">getTailleYtresor</a>() <span class="keyword">const</span>; </div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160; </div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPiece.html#ac6a3fbf201f82f334be9c1894b74ab15">setXTresor</a>(<span class="keywordtype">int</span> x); </div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160; </div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPiece.html#aacd02e7fd695b0162321a0c7ed25b282">setYTresor</a>(<span class="keywordtype">int</span> y); </div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160; </div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPiece.html#ac07453eb494f9ddd8d4f824b1d0a0910">setTailleXTresor</a>(<span class="keywordtype">int</span> tailleX); </div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160; </div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPiece.html#afcd5c3c0bdc1080a90631c7a69a80dfa">setTailleYTresor</a>(<span class="keywordtype">int</span> tailleY);</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    </div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <a class="code" href="classMonstre.html">Monstre</a>&amp; <a class="code" href="classPiece.html#a71dd5b7b374692a36b0592c61f486492">getMonstre</a>(<span class="keywordtype">int</span> indice); </div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160; </div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPiece.html#aa654b34930465fed00d9306deba9984e">ajouterMonstre</a>(<a class="code" href="classMonstre.html">Monstre</a>&amp; monstre); </div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160; </div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <a class="code" href="classObstacle.html">Obstacle</a>&amp; <a class="code" href="classPiece.html#ae45dd9e3a4e32354e80c2eca490aebd1">getObstacle</a>();</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160; </div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classPiece.html#a933ec01ebfa96465350c0473dcc1f840">estPositionValidePiece</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> x, <span class="keyword">const</span> <span class="keywordtype">int</span> y) <span class="keyword">const</span>; </div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160; </div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classPiece.html#aed6566fd878bdf3aeb9a0d32802030d0">estPositionValidePiecePos</a>(<span class="keyword">const</span> <a class="code" href="classPos.html">Pos</a> &amp; p) <span class="keyword">const</span> ;</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160; </div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPiece.html#a4c34c62ab9682529f7ad15991ccadea6">initVieEtBombeEtPotion</a>(<span class="keywordtype">int</span> epaisseurPorte, <span class="keywordtype">int</span> tailleJoueurX, <span class="keywordtype">int</span> tailleJoueurY);</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160; </div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPiece.html#add6b5ff6658485e98b10d135a7be04eb">constructionType</a>(<span class="keywordtype">int</span> nb, <span class="keywordtype">int</span> tailleXMonstre, <span class="keywordtype">int</span> tailleYMonstre, <span class="keywordtype">int</span> epaisseurPorte, <span class="keywordtype">int</span> tailleJoueurX, <span class="keywordtype">int</span> tailleJoueurY); </div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160; </div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classPiece.html#aaa4b23ae64e86c22ee2285346a26663f">collisionsMurs</a>(<a class="code" href="classPos.html">Pos</a> p, <span class="keywordtype">int</span> tailleX, <span class="keywordtype">int</span> tailleY);</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160; </div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classPiece.html#a96d0f8be22b436c975787d5f7253e2f4">collisionsPortes</a>(<a class="code" href="classPos.html">Pos</a> p, <span class="keywordtype">int</span> tailleX, <span class="keywordtype">int</span> tailleY);</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160; </div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPiece.html#a1bc1d90afd7e17e69acdb6cbd9c5cd7b">supprimerUnMonstre</a>(<span class="keywordtype">int</span> indice); </div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160; </div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPiece.html#a0e9a8c753c34556fbc3d3c48188891fb">testRegressionPiece</a>(); </div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160; </div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;};</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160; </div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;<span class="preprocessor">#endif </span></div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160; </div>
+<div class="ttc" id="aclassMonstre_html"><div class="ttname"><a href="classMonstre.html">Monstre</a></div><div class="ttdoc">classe pour gerer les monstres du jeu</div><div class="ttdef"><b>Definition:</b> Monstre.h:13</div></div>
+<div class="ttc" id="aclassMur_html"><div class="ttname"><a href="classMur.html">Mur</a></div><div class="ttdoc">Classe représentant un mur dans un jeu.</div><div class="ttdef"><b>Definition:</b> Mur.h:11</div></div>
+<div class="ttc" id="aclassObstacle_html"><div class="ttname"><a href="classObstacle.html">Obstacle</a></div><div class="ttdoc">classe pour gerer les fonctionalités des Obstacles (la barre)</div><div class="ttdef"><b>Definition:</b> Obstacle.h:13</div></div>
+<div class="ttc" id="aclassPiece_html"><div class="ttname"><a href="classPiece.html">Piece</a></div><div class="ttdoc">Classe représentant une pièce.</div><div class="ttdef"><b>Definition:</b> Piece.h:49</div></div>
+<div class="ttc" id="aclassPiece_html_a04afd73570955f46bc7e34c2b45e16db"><div class="ttname"><a href="classPiece.html#a04afd73570955f46bc7e34c2b45e16db">Piece::getElement</a></div><div class="ttdeci">Element &amp; getElement()</div><div class="ttdoc">permet de recuperer un objet de la structure Element</div><div class="ttdef"><b>Definition:</b> Piece.cpp:91</div></div>
+<div class="ttc" id="aclassPiece_html_a0e9a8c753c34556fbc3d3c48188891fb"><div class="ttname"><a href="classPiece.html#a0e9a8c753c34556fbc3d3c48188891fb">Piece::testRegressionPiece</a></div><div class="ttdeci">void testRegressionPiece()</div><div class="ttdoc">test de regression de la classe Piece</div><div class="ttdef"><b>Definition:</b> Piece.cpp:506</div></div>
+<div class="ttc" id="aclassPiece_html_a12f2f02888d9be4cc8c537010b4627db"><div class="ttname"><a href="classPiece.html#a12f2f02888d9be4cc8c537010b4627db">Piece::setContientBombe</a></div><div class="ttdeci">void setContientBombe(bool e)</div><div class="ttdoc">fonction permettant de modifier le booleen indiquant si la piece possede une bombe</div><div class="ttdef"><b>Definition:</b> Piece.cpp:130</div></div>
+<div class="ttc" id="aclassPiece_html_a13d28b164c3e29f3da09461aea2b44d5"><div class="ttname"><a href="classPiece.html#a13d28b164c3e29f3da09461aea2b44d5">Piece::getType</a></div><div class="ttdeci">TypePiece getType() const</div><div class="ttdoc">recupere le type de la piece</div><div class="ttdef"><b>Definition:</b> Piece.cpp:190</div></div>
+<div class="ttc" id="aclassPiece_html_a15109c07d5eee8be648e01849f7ce28a"><div class="ttname"><a href="classPiece.html#a15109c07d5eee8be648e01849f7ce28a">Piece::getBombe</a></div><div class="ttdeci">Element &amp; getBombe()</div><div class="ttdoc">permet de recuperer un objet de la structure Element pour la bombe</div><div class="ttdef"><b>Definition:</b> Piece.cpp:104</div></div>
+<div class="ttc" id="aclassPiece_html_a1bc1d90afd7e17e69acdb6cbd9c5cd7b"><div class="ttname"><a href="classPiece.html#a1bc1d90afd7e17e69acdb6cbd9c5cd7b">Piece::supprimerUnMonstre</a></div><div class="ttdeci">void supprimerUnMonstre(int indice)</div><div class="ttdoc">supprimer un monstre une fois qu'il a été tué</div><div class="ttdef"><b>Definition:</b> Piece.cpp:487</div></div>
+<div class="ttc" id="aclassPiece_html_a20542888abf9f933aa48834b6a325f17"><div class="ttname"><a href="classPiece.html#a20542888abf9f933aa48834b6a325f17">Piece::getPotion</a></div><div class="ttdeci">Element &amp; getPotion()</div><div class="ttdoc">permet de recuperer un objet de la structure Element pour la potion</div><div class="ttdef"><b>Definition:</b> Piece.cpp:117</div></div>
+<div class="ttc" id="aclassPiece_html_a2fff5c5fb3272c1277e5a59cf404856b"><div class="ttname"><a href="classPiece.html#a2fff5c5fb3272c1277e5a59cf404856b">Piece::setElement</a></div><div class="ttdeci">void setElement(int x, int y, int l, int h)</div><div class="ttdoc">permet d'initialiser les champs de la structure Element</div><div class="ttdef"><b>Definition:</b> Piece.cpp:96</div></div>
+<div class="ttc" id="aclassPiece_html_a4c34c62ab9682529f7ad15991ccadea6"><div class="ttname"><a href="classPiece.html#a4c34c62ab9682529f7ad15991ccadea6">Piece::initVieEtBombeEtPotion</a></div><div class="ttdeci">void initVieEtBombeEtPotion(int epaisseurPorte, int tailleJoueurX, int tailleJoueurY)</div><div class="ttdoc">fonction intermédiaire qui met des vie supplémentaire et des bombes dans une piece</div><div class="ttdef"><b>Definition:</b> Piece.cpp:295</div></div>
+<div class="ttc" id="aclassPiece_html_a5133dfac4e5de410c4b7632e904863be"><div class="ttname"><a href="classPiece.html#a5133dfac4e5de410c4b7632e904863be">Piece::getContientVie</a></div><div class="ttdeci">bool &amp; getContientVie()</div><div class="ttdoc">recupere l info stocké dans le booleen</div><div class="ttdef"><b>Definition:</b> Piece.cpp:145</div></div>
+<div class="ttc" id="aclassPiece_html_a55dc8273655747a94e9b64e6306596f4"><div class="ttname"><a href="classPiece.html#a55dc8273655747a94e9b64e6306596f4">Piece::setBombe</a></div><div class="ttdeci">void setBombe(int x, int y, int l, int h)</div><div class="ttdoc">permet d'initialiser les champs de la structure Element pour la bombe</div><div class="ttdef"><b>Definition:</b> Piece.cpp:109</div></div>
+<div class="ttc" id="aclassPiece_html_a5d7a4f6bade94cb33b6f634de8aa7918"><div class="ttname"><a href="classPiece.html#a5d7a4f6bade94cb33b6f634de8aa7918">Piece::~Piece</a></div><div class="ttdeci">~Piece()</div><div class="ttdoc">destructeur de la piece</div><div class="ttdef"><b>Definition:</b> Piece.cpp:73</div></div>
+<div class="ttc" id="aclassPiece_html_a5e0e06c89d93b9995319abbb01b0da72"><div class="ttname"><a href="classPiece.html#a5e0e06c89d93b9995319abbb01b0da72">Piece::getYTresor</a></div><div class="ttdeci">int getYTresor() const</div><div class="ttdoc">renvoie la coordonnée Y du trésor</div><div class="ttdef"><b>Definition:</b> Piece.cpp:230</div></div>
+<div class="ttc" id="aclassPiece_html_a61b625adc8c4abf588a1ec29faaf7bc7"><div class="ttname"><a href="classPiece.html#a61b625adc8c4abf588a1ec29faaf7bc7">Piece::getPorte</a></div><div class="ttdeci">Porte &amp; getPorte(int num)</div><div class="ttdoc">recupere une porte selon son indice</div><div class="ttdef"><b>Definition:</b> Piece.cpp:200</div></div>
+<div class="ttc" id="aclassPiece_html_a6fde7bca51d0a3a43a6410498fa01bfd"><div class="ttname"><a href="classPiece.html#a6fde7bca51d0a3a43a6410498fa01bfd">Piece::getTypePotion</a></div><div class="ttdeci">TypePotion getTypePotion() const</div><div class="ttdoc">recupere le type de la potion</div><div class="ttdef"><b>Definition:</b> Piece.cpp:195</div></div>
+<div class="ttc" id="aclassPiece_html_a71dd5b7b374692a36b0592c61f486492"><div class="ttname"><a href="classPiece.html#a71dd5b7b374692a36b0592c61f486492">Piece::getMonstre</a></div><div class="ttdeci">Monstre &amp; getMonstre(int indice)</div><div class="ttdoc">recupere un monstre contenu dans le tableau de monstre selon l'indice</div><div class="ttdef"><b>Definition:</b> Piece.cpp:265</div></div>
+<div class="ttc" id="aclassPiece_html_a7e0824ec389b9ae13e59ae04e1c4cb75"><div class="ttname"><a href="classPiece.html#a7e0824ec389b9ae13e59ae04e1c4cb75">Piece::getNbMur</a></div><div class="ttdeci">int getNbMur() const</div><div class="ttdoc">recupere le nombre de murs</div><div class="ttdef"><b>Definition:</b> Piece.cpp:215</div></div>
+<div class="ttc" id="aclassPiece_html_a7eda8b47c3875bce77a6b37c48d15f7f"><div class="ttname"><a href="classPiece.html#a7eda8b47c3875bce77a6b37c48d15f7f">Piece::getDimXP</a></div><div class="ttdeci">int getDimXP() const</div><div class="ttdoc">recupere la largeur de la piece</div><div class="ttdef"><b>Definition:</b> Piece.cpp:170</div></div>
+<div class="ttc" id="aclassPiece_html_a837e8d1cc3371d4654e6ce44cbd487cc"><div class="ttname"><a href="classPiece.html#a837e8d1cc3371d4654e6ce44cbd487cc">Piece::getContientBombe</a></div><div class="ttdeci">bool &amp; getContientBombe()</div><div class="ttdoc">recupere l info stocké dans le booleen</div><div class="ttdef"><b>Definition:</b> Piece.cpp:135</div></div>
+<div class="ttc" id="aclassPiece_html_a846ef744ac73dd8054f5e99a516ddda0"><div class="ttname"><a href="classPiece.html#a846ef744ac73dd8054f5e99a516ddda0">Piece::setNbMur</a></div><div class="ttdeci">void setNbMur(int nb)</div><div class="ttdoc">change le nombre de murs</div><div class="ttdef"><b>Definition:</b> Piece.cpp:220</div></div>
+<div class="ttc" id="aclassPiece_html_a8efad6126e76a571515199b9517f3a19"><div class="ttname"><a href="classPiece.html#a8efad6126e76a571515199b9517f3a19">Piece::getTailleXTresor</a></div><div class="ttdeci">int getTailleXTresor() const</div><div class="ttdoc">renvoie la taille X du trésor</div><div class="ttdef"><b>Definition:</b> Piece.cpp:235</div></div>
+<div class="ttc" id="aclassPiece_html_a933ec01ebfa96465350c0473dcc1f840"><div class="ttname"><a href="classPiece.html#a933ec01ebfa96465350c0473dcc1f840">Piece::estPositionValidePiece</a></div><div class="ttdeci">bool estPositionValidePiece(const int x, const int y) const</div><div class="ttdoc">verifie si la position d'un point est dans les dimension de la piece</div><div class="ttdef"><b>Definition:</b> Piece.cpp:283</div></div>
+<div class="ttc" id="aclassPiece_html_a96c3aec43f0432e3be313937ebaa8500"><div class="ttname"><a href="classPiece.html#a96c3aec43f0432e3be313937ebaa8500">Piece::setPotion</a></div><div class="ttdeci">void setPotion(int x, int y, int l, int h)</div><div class="ttdoc">permet d'initialiser les champs de la structure Element pour la potion</div><div class="ttdef"><b>Definition:</b> Piece.cpp:122</div></div>
+<div class="ttc" id="aclassPiece_html_a96d0f8be22b436c975787d5f7253e2f4"><div class="ttname"><a href="classPiece.html#a96d0f8be22b436c975787d5f7253e2f4">Piece::collisionsPortes</a></div><div class="ttdeci">int collisionsPortes(Pos p, int tailleX, int tailleY)</div><div class="ttdoc">verifie si une entité est dans une porte</div><div class="ttdef"><b>Definition:</b> Piece.cpp:434</div></div>
+<div class="ttc" id="aclassPiece_html_a9c000bf97bf61a91869d6cddc617f865"><div class="ttname"><a href="classPiece.html#a9c000bf97bf61a91869d6cddc617f865">Piece::setObjet</a></div><div class="ttdeci">void setObjet(int x, int y, int l, int h)</div><div class="ttdoc">permet d initaliser les champs de la structure Objet</div><div class="ttdef"><b>Definition:</b> Piece.cpp:83</div></div>
+<div class="ttc" id="aclassPiece_html_a9decc9dd1a10a8460b759166aeae25b8"><div class="ttname"><a href="classPiece.html#a9decc9dd1a10a8460b759166aeae25b8">Piece::setAPrisVie</a></div><div class="ttdeci">void setAPrisVie(bool e)</div><div class="ttdoc">change le booleen concernant le fait que si le joueur a pris la vie</div><div class="ttdef"><b>Definition:</b> Piece.cpp:150</div></div>
+<div class="ttc" id="aclassPiece_html_aa32244f1f36a9d21be9fbf890e3066a7"><div class="ttname"><a href="classPiece.html#aa32244f1f36a9d21be9fbf890e3066a7">Piece::setContientPotion</a></div><div class="ttdeci">void setContientPotion(bool e)</div><div class="ttdoc">change le booleen concernant le fait que la piece contient une potion</div><div class="ttdef"><b>Definition:</b> Piece.cpp:160</div></div>
+<div class="ttc" id="aclassPiece_html_aa3c47ef4f6244337bdd04c43ab8abe12"><div class="ttname"><a href="classPiece.html#aa3c47ef4f6244337bdd04c43ab8abe12">Piece::getNbMonstre</a></div><div class="ttdeci">int getNbMonstre() const</div><div class="ttdoc">recupere le nombre de monstre</div><div class="ttdef"><b>Definition:</b> Piece.cpp:180</div></div>
+<div class="ttc" id="aclassPiece_html_aa4f8a1520f0880c42a29b4c1befda948"><div class="ttname"><a href="classPiece.html#aa4f8a1520f0880c42a29b4c1befda948">Piece::getTailleYtresor</a></div><div class="ttdeci">int getTailleYtresor() const</div><div class="ttdoc">renvoie la taille Y du trésor</div><div class="ttdef"><b>Definition:</b> Piece.cpp:240</div></div>
+<div class="ttc" id="aclassPiece_html_aa654b34930465fed00d9306deba9984e"><div class="ttname"><a href="classPiece.html#aa654b34930465fed00d9306deba9984e">Piece::ajouterMonstre</a></div><div class="ttdeci">void ajouterMonstre(Monstre &amp;monstre)</div><div class="ttdoc">permet d'ajouter un monstre à la piece</div><div class="ttdef"><b>Definition:</b> Piece.cpp:270</div></div>
+<div class="ttc" id="aclassPiece_html_aaa4b23ae64e86c22ee2285346a26663f"><div class="ttname"><a href="classPiece.html#aaa4b23ae64e86c22ee2285346a26663f">Piece::collisionsMurs</a></div><div class="ttdeci">int collisionsMurs(Pos p, int tailleX, int tailleY)</div><div class="ttdoc">verifie si une entité est dans un mur</div><div class="ttdef"><b>Definition:</b> Piece.cpp:383</div></div>
+<div class="ttc" id="aclassPiece_html_aacd02e7fd695b0162321a0c7ed25b282"><div class="ttname"><a href="classPiece.html#aacd02e7fd695b0162321a0c7ed25b282">Piece::setYTresor</a></div><div class="ttdeci">void setYTresor(int y)</div><div class="ttdoc">modifie la coordonnée y du trésor</div><div class="ttdef"><b>Definition:</b> Piece.cpp:250</div></div>
+<div class="ttc" id="aclassPiece_html_ac07453eb494f9ddd8d4f824b1d0a0910"><div class="ttname"><a href="classPiece.html#ac07453eb494f9ddd8d4f824b1d0a0910">Piece::setTailleXTresor</a></div><div class="ttdeci">void setTailleXTresor(int tailleX)</div><div class="ttdoc">modifie la taille x du trésor</div><div class="ttdef"><b>Definition:</b> Piece.cpp:255</div></div>
+<div class="ttc" id="aclassPiece_html_ac42ea83dac279f4a0efa56a457d28a43"><div class="ttname"><a href="classPiece.html#ac42ea83dac279f4a0efa56a457d28a43">Piece::setNbMonstre</a></div><div class="ttdeci">void setNbMonstre(int nb)</div><div class="ttdoc">modifie la donnée membre du nombre de monstre</div><div class="ttdef"><b>Definition:</b> Piece.cpp:185</div></div>
+<div class="ttc" id="aclassPiece_html_ac57de5803bbad829b143bc7268267dc1"><div class="ttname"><a href="classPiece.html#ac57de5803bbad829b143bc7268267dc1">Piece::Piece</a></div><div class="ttdeci">Piece()</div><div class="ttdoc">constructeur par defaut de la classe piece</div><div class="ttdef"><b>Definition:</b> Piece.cpp:9</div></div>
+<div class="ttc" id="aclassPiece_html_ac6a3fbf201f82f334be9c1894b74ab15"><div class="ttname"><a href="classPiece.html#ac6a3fbf201f82f334be9c1894b74ab15">Piece::setXTresor</a></div><div class="ttdeci">void setXTresor(int x)</div><div class="ttdoc">modifie la coordonnée x du trésor</div><div class="ttdef"><b>Definition:</b> Piece.cpp:245</div></div>
+<div class="ttc" id="aclassPiece_html_ad014f5c2d447148180dc11057cab2365"><div class="ttname"><a href="classPiece.html#ad014f5c2d447148180dc11057cab2365">Piece::getContientPotion</a></div><div class="ttdeci">bool &amp; getContientPotion()</div><div class="ttdoc">recupere l info concerant le fait que si la piece contient une potion</div><div class="ttdef"><b>Definition:</b> Piece.cpp:165</div></div>
+<div class="ttc" id="aclassPiece_html_ad57c72b733ed27466b687d6fcb62385d"><div class="ttname"><a href="classPiece.html#ad57c72b733ed27466b687d6fcb62385d">Piece::getDimYP</a></div><div class="ttdeci">int getDimYP() const</div><div class="ttdoc">recupere la longueur dimY</div><div class="ttdef"><b>Definition:</b> Piece.cpp:175</div></div>
+<div class="ttc" id="aclassPiece_html_add6b5ff6658485e98b10d135a7be04eb"><div class="ttname"><a href="classPiece.html#add6b5ff6658485e98b10d135a7be04eb">Piece::constructionType</a></div><div class="ttdeci">void constructionType(int nb, int tailleXMonstre, int tailleYMonstre, int epaisseurPorte, int tailleJoueurX, int tailleJoueurY)</div><div class="ttdoc">initialise les données de la piece conformement à son type</div><div class="ttdef"><b>Definition:</b> Piece.cpp:323</div></div>
+<div class="ttc" id="aclassPiece_html_ae45dd9e3a4e32354e80c2eca490aebd1"><div class="ttname"><a href="classPiece.html#ae45dd9e3a4e32354e80c2eca490aebd1">Piece::getObstacle</a></div><div class="ttdeci">Obstacle &amp; getObstacle()</div><div class="ttdoc">permet de recupere la barre dans une piece // normalement à supp</div><div class="ttdef"><b>Definition:</b> Piece.cpp:278</div></div>
+<div class="ttc" id="aclassPiece_html_aea817799ac6a8882f8f9d6371524e23b"><div class="ttname"><a href="classPiece.html#aea817799ac6a8882f8f9d6371524e23b">Piece::getAPrisVie</a></div><div class="ttdeci">bool &amp; getAPrisVie()</div><div class="ttdoc">recupere l info concerant le fait que si le joueur a pris la vie</div><div class="ttdef"><b>Definition:</b> Piece.cpp:155</div></div>
+<div class="ttc" id="aclassPiece_html_aeb0f0d7bd2967cf41b2d4b203c2082a9"><div class="ttname"><a href="classPiece.html#aeb0f0d7bd2967cf41b2d4b203c2082a9">Piece::getObjet</a></div><div class="ttdeci">Objet getObjet() const</div><div class="ttdoc">recuperer les info de la structure Objet pour la partie concerant l'enigme</div><div class="ttdef"><b>Definition:</b> Piece.cpp:78</div></div>
+<div class="ttc" id="aclassPiece_html_aed6566fd878bdf3aeb9a0d32802030d0"><div class="ttname"><a href="classPiece.html#aed6566fd878bdf3aeb9a0d32802030d0">Piece::estPositionValidePiecePos</a></div><div class="ttdeci">bool estPositionValidePiecePos(const Pos &amp;p) const</div><div class="ttdoc">verifie si la position d'un point est dans la dimension de la piece</div><div class="ttdef"><b>Definition:</b> Piece.cpp:290</div></div>
+<div class="ttc" id="aclassPiece_html_aee3935f7a1ff091225130862076c4ca2"><div class="ttname"><a href="classPiece.html#aee3935f7a1ff091225130862076c4ca2">Piece::setContientVie</a></div><div class="ttdeci">void setContientVie(bool e)</div><div class="ttdoc">fonction permettant de modifier le booleen indiquant si la piece possede une vie en plus</div><div class="ttdef"><b>Definition:</b> Piece.cpp:140</div></div>
+<div class="ttc" id="aclassPiece_html_af966feb72e3eb82f18e314ac51a45115"><div class="ttname"><a href="classPiece.html#af966feb72e3eb82f18e314ac51a45115">Piece::getXTresor</a></div><div class="ttdeci">int getXTresor() const</div><div class="ttdoc">renvoie la coordonnée X du trésor</div><div class="ttdef"><b>Definition:</b> Piece.cpp:225</div></div>
+<div class="ttc" id="aclassPiece_html_afcd5c3c0bdc1080a90631c7a69a80dfa"><div class="ttname"><a href="classPiece.html#afcd5c3c0bdc1080a90631c7a69a80dfa">Piece::setTailleYTresor</a></div><div class="ttdeci">void setTailleYTresor(int tailleY)</div><div class="ttdoc">modifie la taille y du trésor</div><div class="ttdef"><b>Definition:</b> Piece.cpp:260</div></div>
+<div class="ttc" id="aclassPiece_html_afd3cdc06b0a2553154861a74aae7064e"><div class="ttname"><a href="classPiece.html#afd3cdc06b0a2553154861a74aae7064e">Piece::getMur</a></div><div class="ttdeci">Mur &amp; getMur(int indice)</div><div class="ttdoc">recupere un mur selon son indice</div><div class="ttdef"><b>Definition:</b> Piece.cpp:210</div></div>
+<div class="ttc" id="aclassPorte_html"><div class="ttname"><a href="classPorte.html">Porte</a></div><div class="ttdoc">classe pour gerer les fonctionalités des Portes</div><div class="ttdef"><b>Definition:</b> Porte.h:14</div></div>
+<div class="ttc" id="aclassPos_html"><div class="ttname"><a href="classPos.html">Pos</a></div><div class="ttdoc">gerer des vecteurs en 2D</div><div class="ttdef"><b>Definition:</b> Pos.h:10</div></div>
+<div class="ttc" id="astructElement_html"><div class="ttname"><a href="structElement.html">Element</a></div><div class="ttdoc">Structure représentant un élément.</div><div class="ttdef"><b>Definition:</b> Piece.h:32</div></div>
+<div class="ttc" id="astructElement_html_a01a60d770fa3160133772fc37057b895"><div class="ttname"><a href="structElement.html#a01a60d770fa3160133772fc37057b895">Element::tailleYElement</a></div><div class="ttdeci">int tailleYElement</div><div class="ttdoc">la longueur d'un élément</div><div class="ttdef"><b>Definition:</b> Piece.h:43</div></div>
+<div class="ttc" id="astructElement_html_a6cae6e31d667c0fe4641af8cbc76a6de"><div class="ttname"><a href="structElement.html#a6cae6e31d667c0fe4641af8cbc76a6de">Element::tailleXElement</a></div><div class="ttdeci">int tailleXElement</div><div class="ttdoc">la largeur d'un élément</div><div class="ttdef"><b>Definition:</b> Piece.h:40</div></div>
+<div class="ttc" id="astructElement_html_aa0e8753dd8f31939bb1aa38025e116e5"><div class="ttname"><a href="structElement.html#aa0e8753dd8f31939bb1aa38025e116e5">Element::xElement</a></div><div class="ttdeci">int xElement</div><div class="ttdoc">la position x d'un élément</div><div class="ttdef"><b>Definition:</b> Piece.h:34</div></div>
+<div class="ttc" id="astructElement_html_ad582483e2d24aa34d9c738368f7c7e34"><div class="ttname"><a href="structElement.html#ad582483e2d24aa34d9c738368f7c7e34">Element::yElement</a></div><div class="ttdeci">int yElement</div><div class="ttdoc">la position y d'un élément</div><div class="ttdef"><b>Definition:</b> Piece.h:37</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

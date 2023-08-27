@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet:  Fichier source de src/Jeu.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Projet de realisation d&#39;un jeu en 2D du LIFAPSD Lyon 1 2023</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Jeu.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _JEU_H_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define _JEU_H_</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span> </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;chrono&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;Joueur.h&quot;</span>  </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;Plateau.h&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classJeu.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="classJeu.html">Jeu</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="classPlateau.html">Plateau</a> pla; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;     </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">int</span> pieceActuelle;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="classJoueur.html">Joueur</a> joueur;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">bool</span> gameOverBool; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="classJeu.html#acc5795ee00edf75516d3dfe65be3e6d6">Jeu</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classJeu.html#a2b168605ee8e8bd00cd4f53abf991eb0">setGameOverBool</a>(<span class="keywordtype">bool</span> e); </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classJeu.html#aaf21120c9a32bcffab37a2c8646afc91">getGameOverBool</a>() <span class="keyword">const</span>; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">const</span> <a class="code" href="classPlateau.html">Plateau</a> &amp; <a class="code" href="classJeu.html#a8b15f1a2daed6f67d1379bac897cfe71">getPlateau</a>() <span class="keyword">const</span>; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">const</span> <a class="code" href="classPlateau.html">Plateau</a> &amp; <a class="code" href="classJeu.html#a8b15f1a2daed6f67d1379bac897cfe71">getPlateau</a>(); </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="classJoueur.html">Joueur</a> &amp; <a class="code" href="classJeu.html#aa9c3f8b94c7aad2f1997de99c3d50237">getJoueurJeu</a>() ; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">const</span> <a class="code" href="classJoueur.html">Joueur</a> &amp; <a class="code" href="classJeu.html#aa9c3f8b94c7aad2f1997de99c3d50237">getJoueurJeu</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classJeu.html#ab661c76f217ba2a4a3ed8e4f5b7f413f">getPieceActuelle</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classJeu.html#a6b2cce3315b3ba1742dc00d77d8c0f9f">setPieceActuelle</a>(<span class="keywordtype">int</span> p);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classJeu.html#aea6c35a8243718187505adb5c6351ed4">actionAutomatique</a>(<span class="keywordtype">int</span> dimensionPiece, <span class="keywordtype">bool</span> monstre1, <span class="keywordtype">bool</span> monstre2, <span class="keywordtype">bool</span> barre);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classJeu.html#a37474afcea51328c62f2fd6e442159c4">actionClavier</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> touche, <span class="keywordtype">int</span> pas, <span class="keywordtype">int</span> dimensionPiece);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classJeu.html#ac93dddffa67fb9451f56a15378836942">deplacementJoueur</a>(<span class="keyword">const</span> <a class="code" href="classPos.html">Pos</a> &amp; dep, <span class="keywordtype">int</span> dimensionPiece);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classJeu.html#af436d3928fbfa174c00a04dbc89cd0da">initJeu</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> dimensionPiece,<span class="keywordtype">int</span> taillePorteX, <span class="keywordtype">int</span> taillePorteY, <span class="keywordtype">int</span> tailleJoueurX, <span class="keywordtype">int</span> tailleJoueurY, <span class="keywordtype">int</span> tailleXMonstre, <span class="keywordtype">int</span> tailleYMonstre);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classJeu.html#a74715a3752868d3f8525cc3985e52e37">changementDePiece</a>(<span class="keywordtype">int</span> dimensionPiece);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classJeu.html#af3ebc042d0afde7a655410e1815b0184">changeHaut</a>(); </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classJeu.html#a1216e6b63ec78c8597f8f3e82e5dd21d">changeDroite</a>();</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classJeu.html#a4a2b137ffb1cdff68ce9eecba2370558">changeBas</a>();</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classJeu.html#a570eae0ebecc851531045d306baa5b88">changeGauche</a>();</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <a class="code" href="classPos.html">Pos</a> <a class="code" href="classJeu.html#a916db865e990dcffb9850e1a8ec95ce6">rapprochementMur</a>(<span class="keyword">const</span> <a class="code" href="classPos.html">Pos</a> &amp; p, <span class="keywordtype">int</span> tailleX, <span class="keywordtype">int</span> tailleY, <span class="keywordtype">int</span> indiceMur, <span class="keyword">const</span> <a class="code" href="classPos.html">Pos</a> &amp; deplacement);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <a class="code" href="classPos.html">Pos</a> <a class="code" href="classJeu.html#ab1495832dd3fca140d6259e09044f2bb">choixDéplacementAléatoire</a>(<span class="keywordtype">int</span> pas, <span class="keywordtype">int</span> k);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <a class="code" href="classPos.html">Pos</a> <a class="code" href="classJeu.html#aac7daa0fe73253cec386570db88f39aa">choixRapprochementJoueur</a>(<span class="keywordtype">int</span> pas,<span class="keywordtype">int</span> k);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classJeu.html#aad4adfd84bd988531cc87e282da07671">deplacementMonstre</a>(<span class="keyword">const</span> <a class="code" href="classPos.html">Pos</a> &amp; deplacement, <span class="keywordtype">int</span> k);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classJeu.html#ae319d9871758a6db932dc896bef36bd2">initialisationDeplacementAutoMonstre</a>( <span class="keywordtype">int</span> k); </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classJeu.html#a36715f9e303120901b27d233c7184f5f">contactMonstreJoueur</a>(); </div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classJeu.html#af5de7f5d9d73d528dd0ed4b4c6f764a1">contactBarreJoueur</a>(); </div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classJeu.html#a2c846d2dc2f476a199b72825408f8a40">barreAuto</a>();</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classJeu.html#a8da3573a50a1c1e526f2281ed3274cd3">gestionVie</a>(); </div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classJeu.html#aed19eab544f8bbdaad6914382611eb33">gestionInvincibilite</a>(<span class="keywordtype">bool</span> longtemps);</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classJeu.html#a48de3823c1ed1a6ffab6c8e8b1ce2693">gameOver</a>(); </div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classJeu.html#a26c1957d0050457e002384d5b7834119">arretJeu</a>(); </div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classJeu.html#a887289068eae0ad1bc4bc7b232afb1b3">jeuGagner</a>(); </div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classJeu.html#ac7dbc750bf7c0ee919a95d1176013baf">contactTresorJoueur</a>(); </div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classJeu.html#aaad27be65aa18e9501e7ac5cf62f6a94">contactVieJoueur</a>(); </div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classJeu.html#a0831e43cc8dcedadc93e8acfb14d5f61">contactBombeJoueur</a>(); </div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classJeu.html#abdd22bc9a58511e382ea047f9e674e2e">contactMonstreEntite</a>(<span class="keywordtype">int</span> k, <a class="code" href="classPos.html">Pos</a> p, <span class="keywordtype">int</span> tailleX, <span class="keywordtype">int</span> tailleY); </div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; </div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classJeu.html#a65bec5e0ef2e441c39780d9dfbcb77c5">contactPotionJoueur</a>(); </div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; </div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classJeu.html#abcc547009cd430606c7073d506f72b6f">joueurBuPotion</a>(); </div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160; </div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classJeu.html#a321f3111acd8165f3d9400331494d4d3">deplacerEpee</a>(<span class="keywordtype">char</span> direction); </div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160; </div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classJeu.html#a07dd594532ec4cb971f11ae792d4c9b0">mortMonstre</a>(); </div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160; </div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classJeu.html#ae051de80c86f374436b31c9a1c8124b6">deplaAutoArme</a>(); </div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160; </div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;};</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160; </div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassJeu_html"><div class="ttname"><a href="classJeu.html">Jeu</a></div><div class="ttdoc">La classe Jeu gère les différents éléments d'un jeu tels que le plateau, le joueur et les actions pos...</div><div class="ttdef"><b>Definition:</b> Jeu.h:18</div></div>
+<div class="ttc" id="aclassJeu_html_a07dd594532ec4cb971f11ae792d4c9b0"><div class="ttname"><a href="classJeu.html#a07dd594532ec4cb971f11ae792d4c9b0">Jeu::mortMonstre</a></div><div class="ttdeci">void mortMonstre()</div><div class="ttdoc">mettre à jour le tableau de monstre en fonction de leur vies</div><div class="ttdef"><b>Definition:</b> Jeu.cpp:978</div></div>
+<div class="ttc" id="aclassJeu_html_a0831e43cc8dcedadc93e8acfb14d5f61"><div class="ttname"><a href="classJeu.html#a0831e43cc8dcedadc93e8acfb14d5f61">Jeu::contactBombeJoueur</a></div><div class="ttdeci">bool contactBombeJoueur()</div><div class="ttdoc">Permet de déterminer si le joueur est entré en contact avec une bombe d'une piece.</div><div class="ttdef"><b>Definition:</b> Jeu.cpp:835</div></div>
+<div class="ttc" id="aclassJeu_html_a1216e6b63ec78c8597f8f3e82e5dd21d"><div class="ttname"><a href="classJeu.html#a1216e6b63ec78c8597f8f3e82e5dd21d">Jeu::changeDroite</a></div><div class="ttdeci">void changeDroite()</div><div class="ttdoc">Permet de recuperer la piece si le joueur est sortie par la porte de droite.</div><div class="ttdef"><b>Definition:</b> Jeu.cpp:175</div></div>
+<div class="ttc" id="aclassJeu_html_a26c1957d0050457e002384d5b7834119"><div class="ttname"><a href="classJeu.html#a26c1957d0050457e002384d5b7834119">Jeu::arretJeu</a></div><div class="ttdeci">bool arretJeu()</div><div class="ttdoc">si le joeur n as plus de vie, ou bien qu'il a trouvé le tresor arreter le jeu</div><div class="ttdef"><b>Definition:</b> Jeu.cpp:759</div></div>
+<div class="ttc" id="aclassJeu_html_a2b168605ee8e8bd00cd4f53abf991eb0"><div class="ttname"><a href="classJeu.html#a2b168605ee8e8bd00cd4f53abf991eb0">Jeu::setGameOverBool</a></div><div class="ttdeci">void setGameOverBool(bool e)</div><div class="ttdoc">Mutateur de la valeur gameOverBool.</div><div class="ttdef"><b>Definition:</b> Jeu.cpp:11</div></div>
+<div class="ttc" id="aclassJeu_html_a2c846d2dc2f476a199b72825408f8a40"><div class="ttname"><a href="classJeu.html#a2c846d2dc2f476a199b72825408f8a40">Jeu::barreAuto</a></div><div class="ttdeci">void barreAuto()</div><div class="ttdoc">Permet de faire bouger la barre.</div><div class="ttdef"><b>Definition:</b> Jeu.cpp:710</div></div>
+<div class="ttc" id="aclassJeu_html_a321f3111acd8165f3d9400331494d4d3"><div class="ttname"><a href="classJeu.html#a321f3111acd8165f3d9400331494d4d3">Jeu::deplacerEpee</a></div><div class="ttdeci">void deplacerEpee(char direction)</div><div class="ttdoc">permet de deplacer l'epee en fonction de la direction souhaitée</div><div class="ttdef"><b>Definition:</b> Jeu.cpp:933</div></div>
+<div class="ttc" id="aclassJeu_html_a36715f9e303120901b27d233c7184f5f"><div class="ttname"><a href="classJeu.html#a36715f9e303120901b27d233c7184f5f">Jeu::contactMonstreJoueur</a></div><div class="ttdeci">bool contactMonstreJoueur()</div><div class="ttdoc">Permet de déterminer si le joueur est entré en contact avec un monstre d'une piece.</div><div class="ttdef"><b>Definition:</b> Jeu.cpp:546</div></div>
+<div class="ttc" id="aclassJeu_html_a37474afcea51328c62f2fd6e442159c4"><div class="ttname"><a href="classJeu.html#a37474afcea51328c62f2fd6e442159c4">Jeu::actionClavier</a></div><div class="ttdeci">bool actionClavier(const char touche, int pas, int dimensionPiece)</div><div class="ttdoc">Effectue une action en fonction de la touche du clavier pressée.</div><div class="ttdef"><b>Definition:</b> Jeu.cpp:74</div></div>
+<div class="ttc" id="aclassJeu_html_a48de3823c1ed1a6ffab6c8e8b1ce2693"><div class="ttname"><a href="classJeu.html#a48de3823c1ed1a6ffab6c8e8b1ce2693">Jeu::gameOver</a></div><div class="ttdeci">bool gameOver()</div><div class="ttdoc">Determine si le joueur est mort en fonciton de son nombre de vie.</div><div class="ttdef"><b>Definition:</b> Jeu.cpp:754</div></div>
+<div class="ttc" id="aclassJeu_html_a4a2b137ffb1cdff68ce9eecba2370558"><div class="ttname"><a href="classJeu.html#a4a2b137ffb1cdff68ce9eecba2370558">Jeu::changeBas</a></div><div class="ttdeci">void changeBas()</div><div class="ttdoc">Permet de recuperer la piece si le joueur est sortie par la porte du bas.</div><div class="ttdef"><b>Definition:</b> Jeu.cpp:180</div></div>
+<div class="ttc" id="aclassJeu_html_a570eae0ebecc851531045d306baa5b88"><div class="ttname"><a href="classJeu.html#a570eae0ebecc851531045d306baa5b88">Jeu::changeGauche</a></div><div class="ttdeci">void changeGauche()</div><div class="ttdoc">Permet de recuperer la piece si le joueur est sortie par la porte de gauche.</div><div class="ttdef"><b>Definition:</b> Jeu.cpp:185</div></div>
+<div class="ttc" id="aclassJeu_html_a65bec5e0ef2e441c39780d9dfbcb77c5"><div class="ttname"><a href="classJeu.html#a65bec5e0ef2e441c39780d9dfbcb77c5">Jeu::contactPotionJoueur</a></div><div class="ttdeci">bool contactPotionJoueur()</div><div class="ttdoc">Permet de déterminer si le joueur est entré en contact avec une potion d'une piece.</div><div class="ttdef"><b>Definition:</b> Jeu.cpp:873</div></div>
+<div class="ttc" id="aclassJeu_html_a6b2cce3315b3ba1742dc00d77d8c0f9f"><div class="ttname"><a href="classJeu.html#a6b2cce3315b3ba1742dc00d77d8c0f9f">Jeu::setPieceActuelle</a></div><div class="ttdeci">void setPieceActuelle(int p)</div><div class="ttdoc">Mutateur de la valeur de l'entier pieceActuelle.</div><div class="ttdef"><b>Definition:</b> Jeu.cpp:46</div></div>
+<div class="ttc" id="aclassJeu_html_a74715a3752868d3f8525cc3985e52e37"><div class="ttname"><a href="classJeu.html#a74715a3752868d3f8525cc3985e52e37">Jeu::changementDePiece</a></div><div class="ttdeci">void changementDePiece(int dimensionPiece)</div><div class="ttdoc">Permet de changer de piece en fonction de la porte entré par le joueur.</div><div class="ttdef"><b>Definition:</b> Jeu.cpp:133</div></div>
+<div class="ttc" id="aclassJeu_html_a887289068eae0ad1bc4bc7b232afb1b3"><div class="ttname"><a href="classJeu.html#a887289068eae0ad1bc4bc7b232afb1b3">Jeu::jeuGagner</a></div><div class="ttdeci">bool jeuGagner()</div><div class="ttdoc">Determine si le joueur a gagner (trouver le tresor avant de perdre toutes ses vies)</div><div class="ttdef"><b>Definition:</b> Jeu.cpp:764</div></div>
+<div class="ttc" id="aclassJeu_html_a8b15f1a2daed6f67d1379bac897cfe71"><div class="ttname"><a href="classJeu.html#a8b15f1a2daed6f67d1379bac897cfe71">Jeu::getPlateau</a></div><div class="ttdeci">const Plateau &amp; getPlateau() const</div><div class="ttdoc">Obtient une référence constante à l'objet pla.</div><div class="ttdef"><b>Definition:</b> Jeu.cpp:21</div></div>
+<div class="ttc" id="aclassJeu_html_a8da3573a50a1c1e526f2281ed3274cd3"><div class="ttname"><a href="classJeu.html#a8da3573a50a1c1e526f2281ed3274cd3">Jeu::gestionVie</a></div><div class="ttdeci">void gestionVie()</div><div class="ttdoc">Determine le score du jeu.</div><div class="ttdef"><b>Definition:</b> Jeu.cpp:719</div></div>
+<div class="ttc" id="aclassJeu_html_a916db865e990dcffb9850e1a8ec95ce6"><div class="ttname"><a href="classJeu.html#a916db865e990dcffb9850e1a8ec95ce6">Jeu::rapprochementMur</a></div><div class="ttdeci">Pos rapprochementMur(const Pos &amp;p, int tailleX, int tailleY, int indiceMur, const Pos &amp;deplacement)</div><div class="ttdoc">Permet de mettre la position d'une entité contre le mur si le pas qu'il veut faire est plus grand.</div><div class="ttdef"><b>Definition:</b> Jeu.cpp:191</div></div>
+<div class="ttc" id="aclassJeu_html_aa9c3f8b94c7aad2f1997de99c3d50237"><div class="ttname"><a href="classJeu.html#aa9c3f8b94c7aad2f1997de99c3d50237">Jeu::getJoueurJeu</a></div><div class="ttdeci">Joueur &amp; getJoueurJeu()</div><div class="ttdoc">Obtient une référence à l'objet joueur.</div><div class="ttdef"><b>Definition:</b> Jeu.cpp:31</div></div>
+<div class="ttc" id="aclassJeu_html_aaad27be65aa18e9501e7ac5cf62f6a94"><div class="ttname"><a href="classJeu.html#aaad27be65aa18e9501e7ac5cf62f6a94">Jeu::contactVieJoueur</a></div><div class="ttdeci">bool contactVieJoueur()</div><div class="ttdoc">Permet de déterminer si le joueur est entré en contact avec une vie d'une piece.</div><div class="ttdef"><b>Definition:</b> Jeu.cpp:816</div></div>
+<div class="ttc" id="aclassJeu_html_aac7daa0fe73253cec386570db88f39aa"><div class="ttname"><a href="classJeu.html#aac7daa0fe73253cec386570db88f39aa">Jeu::choixRapprochementJoueur</a></div><div class="ttdeci">Pos choixRapprochementJoueur(int pas, int k)</div><div class="ttdoc">Fonction intermédiaire qui permet de choisir le déplacement à faire pour rapprocher un monstre du jou...</div><div class="ttdef"><b>Definition:</b> Jeu.cpp:253</div></div>
+<div class="ttc" id="aclassJeu_html_aad4adfd84bd988531cc87e282da07671"><div class="ttname"><a href="classJeu.html#aad4adfd84bd988531cc87e282da07671">Jeu::deplacementMonstre</a></div><div class="ttdeci">void deplacementMonstre(const Pos &amp;deplacement, int k)</div><div class="ttdoc">Fonction intermédiaire qui effectue le déplacement d'un monstre.</div><div class="ttdef"><b>Definition:</b> Jeu.cpp:333</div></div>
+<div class="ttc" id="aclassJeu_html_aaf21120c9a32bcffab37a2c8646afc91"><div class="ttname"><a href="classJeu.html#aaf21120c9a32bcffab37a2c8646afc91">Jeu::getGameOverBool</a></div><div class="ttdeci">bool getGameOverBool() const</div><div class="ttdoc">Accesseur de la valeur gameOverBool.</div><div class="ttdef"><b>Definition:</b> Jeu.cpp:16</div></div>
+<div class="ttc" id="aclassJeu_html_ab1495832dd3fca140d6259e09044f2bb"><div class="ttname"><a href="classJeu.html#ab1495832dd3fca140d6259e09044f2bb">Jeu::choixDéplacementAléatoire</a></div><div class="ttdeci">Pos choixDéplacementAléatoire(int pas, int k)</div><div class="ttdoc">Fonction intermédiaire qui choisit aléatoirement le déplacement d'un monstre.</div><div class="ttdef"><b>Definition:</b> Jeu.cpp:217</div></div>
+<div class="ttc" id="aclassJeu_html_ab661c76f217ba2a4a3ed8e4f5b7f413f"><div class="ttname"><a href="classJeu.html#ab661c76f217ba2a4a3ed8e4f5b7f413f">Jeu::getPieceActuelle</a></div><div class="ttdeci">int getPieceActuelle() const</div><div class="ttdoc">Obtient la valeur de l'entier pieceActuelle.</div><div class="ttdef"><b>Definition:</b> Jeu.cpp:41</div></div>
+<div class="ttc" id="aclassJeu_html_abcc547009cd430606c7073d506f72b6f"><div class="ttname"><a href="classJeu.html#abcc547009cd430606c7073d506f72b6f">Jeu::joueurBuPotion</a></div><div class="ttdeci">void joueurBuPotion()</div><div class="ttdoc">permet de savoir quoi faire si le joueur a pris une potion en fonction de son type de potion</div><div class="ttdef"><b>Definition:</b> Jeu.cpp:892</div></div>
+<div class="ttc" id="aclassJeu_html_abdd22bc9a58511e382ea047f9e674e2e"><div class="ttname"><a href="classJeu.html#abdd22bc9a58511e382ea047f9e674e2e">Jeu::contactMonstreEntite</a></div><div class="ttdeci">bool contactMonstreEntite(int k, Pos p, int tailleX, int tailleY)</div><div class="ttdoc">permet de determiner si un monstre entre en collision avec une autre entité du jeu</div><div class="ttdef"><b>Definition:</b> Jeu.cpp:855</div></div>
+<div class="ttc" id="aclassJeu_html_ac7dbc750bf7c0ee919a95d1176013baf"><div class="ttname"><a href="classJeu.html#ac7dbc750bf7c0ee919a95d1176013baf">Jeu::contactTresorJoueur</a></div><div class="ttdeci">bool contactTresorJoueur()</div><div class="ttdoc">Permet de déterminer si le joueur est entré en contact avec le tresor d'une piece.</div><div class="ttdef"><b>Definition:</b> Jeu.cpp:800</div></div>
+<div class="ttc" id="aclassJeu_html_ac93dddffa67fb9451f56a15378836942"><div class="ttname"><a href="classJeu.html#ac93dddffa67fb9451f56a15378836942">Jeu::deplacementJoueur</a></div><div class="ttdeci">void deplacementJoueur(const Pos &amp;dep, int dimensionPiece)</div><div class="ttdoc">Effectue le deplacent du joueur dans le jeu.</div><div class="ttdef"><b>Definition:</b> Jeu.cpp:108</div></div>
+<div class="ttc" id="aclassJeu_html_acc5795ee00edf75516d3dfe65be3e6d6"><div class="ttname"><a href="classJeu.html#acc5795ee00edf75516d3dfe65be3e6d6">Jeu::Jeu</a></div><div class="ttdeci">Jeu()</div><div class="ttdoc">Constructeur par defaut.</div><div class="ttdef"><b>Definition:</b> Jeu.cpp:5</div></div>
+<div class="ttc" id="aclassJeu_html_ae051de80c86f374436b31c9a1c8124b6"><div class="ttname"><a href="classJeu.html#ae051de80c86f374436b31c9a1c8124b6">Jeu::deplaAutoArme</a></div><div class="ttdeci">void deplaAutoArme()</div><div class="ttdoc">permet de deplacer l'arme en fonction de direction du joueur</div><div class="ttdef"><b>Definition:</b> Jeu.cpp:1003</div></div>
+<div class="ttc" id="aclassJeu_html_ae319d9871758a6db932dc896bef36bd2"><div class="ttname"><a href="classJeu.html#ae319d9871758a6db932dc896bef36bd2">Jeu::initialisationDeplacementAutoMonstre</a></div><div class="ttdeci">void initialisationDeplacementAutoMonstre(int k)</div><div class="ttdoc">permet de faire les déplacements automatiques des monstres</div><div class="ttdef"><b>Definition:</b> Jeu.cpp:358</div></div>
+<div class="ttc" id="aclassJeu_html_aea6c35a8243718187505adb5c6351ed4"><div class="ttname"><a href="classJeu.html#aea6c35a8243718187505adb5c6351ed4">Jeu::actionAutomatique</a></div><div class="ttdeci">bool actionAutomatique(int dimensionPiece, bool monstre1, bool monstre2, bool barre)</div><div class="ttdoc">appel les fonctions qui effectue les actions automatiques</div><div class="ttdef"><b>Definition:</b> Jeu.cpp:52</div></div>
+<div class="ttc" id="aclassJeu_html_aed19eab544f8bbdaad6914382611eb33"><div class="ttname"><a href="classJeu.html#aed19eab544f8bbdaad6914382611eb33">Jeu::gestionInvincibilite</a></div><div class="ttdeci">void gestionInvincibilite(bool longtemps)</div><div class="ttdoc">Determine l'invincibilité du joueur.</div><div class="ttdef"><b>Definition:</b> Jeu.cpp:746</div></div>
+<div class="ttc" id="aclassJeu_html_af3ebc042d0afde7a655410e1815b0184"><div class="ttname"><a href="classJeu.html#af3ebc042d0afde7a655410e1815b0184">Jeu::changeHaut</a></div><div class="ttdeci">void changeHaut()</div><div class="ttdoc">Permet de recuperer la piece si le joueur est sortie par la porte du haut.</div><div class="ttdef"><b>Definition:</b> Jeu.cpp:170</div></div>
+<div class="ttc" id="aclassJeu_html_af436d3928fbfa174c00a04dbc89cd0da"><div class="ttname"><a href="classJeu.html#af436d3928fbfa174c00a04dbc89cd0da">Jeu::initJeu</a></div><div class="ttdeci">void initJeu(int x, int y, int dimensionPiece, int taillePorteX, int taillePorteY, int tailleJoueurX, int tailleJoueurY, int tailleXMonstre, int tailleYMonstre)</div><div class="ttdoc">Iniitalise la classe Jeu pour pouvoir joueur.</div><div class="ttdef"><b>Definition:</b> Jeu.cpp:121</div></div>
+<div class="ttc" id="aclassJeu_html_af5de7f5d9d73d528dd0ed4b4c6f764a1"><div class="ttname"><a href="classJeu.html#af5de7f5d9d73d528dd0ed4b4c6f764a1">Jeu::contactBarreJoueur</a></div><div class="ttdeci">bool contactBarreJoueur()</div><div class="ttdoc">Permet de déterminer si le joueur est entré en contact avec une barre d'une piece.</div><div class="ttdef"><b>Definition:</b> Jeu.cpp:565</div></div>
+<div class="ttc" id="aclassJoueur_html"><div class="ttname"><a href="classJoueur.html">Joueur</a></div><div class="ttdoc">classe pour gerer les fonctionalités du joueur</div><div class="ttdef"><b>Definition:</b> Joueur.h:21</div></div>
+<div class="ttc" id="aclassPlateau_html"><div class="ttname"><a href="classPlateau.html">Plateau</a></div><div class="ttdoc">classe pour gerer l'ensemble des pieces</div><div class="ttdef"><b>Definition:</b> Plateau.h:19</div></div>
+<div class="ttc" id="aclassPos_html"><div class="ttname"><a href="classPos.html">Pos</a></div><div class="ttdoc">gerer des vecteurs en 2D</div><div class="ttdef"><b>Definition:</b> Pos.h:10</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

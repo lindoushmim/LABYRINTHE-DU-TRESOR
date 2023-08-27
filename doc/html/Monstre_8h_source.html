@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet:  Fichier source de src/Monstre.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Projet de realisation d&#39;un jeu en 2D du LIFAPSD Lyon 1 2023</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Monstre.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _Monstre_H_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define _Monstre_H_</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;Pos.h&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//#include &quot;Piece.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classMonstre.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="classMonstre.html">Monstre</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">private</span>: </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="classPos.html">Pos</a> posMonstre;  </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="classPos.html">Pos</a> vitesseMonstre; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">int</span> tailleXMonstre; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">int</span> tailleYMonstre; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">int</span> direction; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">bool</span> vieMonstre; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="classMonstre.html#a8efe47ee8ea4b5ee8e5d3820e620059b">Monstre</a>(); </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="classMonstre.html#a8efe47ee8ea4b5ee8e5d3820e620059b">Monstre</a>(<span class="keywordtype">int</span> px, <span class="keywordtype">int</span> py, <span class="keywordtype">int</span> vx, <span class="keywordtype">int</span> vy,  <span class="keywordtype">int</span> l, <span class="keywordtype">int</span> h);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classMonstre.html#a1862b773f60cf743dc395d1a5e432c5d">getVieMonstre</a>() <span class="keyword">const</span>; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMonstre.html#ac192a36acfc5b7bd018b777a192afb92">setVieMonstre</a>(<span class="keywordtype">bool</span> e); </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classMonstre.html#a4872d384e06eb4f9c927f4dad6960eac">getDirectionMonstre</a>() <span class="keyword">const</span>; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMonstre.html#a4473c189cfb272a024b5bf054040537c">setDirectionMonstre</a>(<span class="keywordtype">int</span> dir); </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="classPos.html">Pos</a> <a class="code" href="classMonstre.html#a5f2ae0cf8ca337f6d6373d15b56b930d">getPositionMonstre</a>() <span class="keyword">const</span>; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMonstre.html#ab0c47b6d7007aeca88c81df156f3e403">setPositionMonstre</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y); </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMonstre.html#ab0c47b6d7007aeca88c81df156f3e403">setPositionMonstre</a>(<a class="code" href="classPos.html">Pos</a> p); </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="code" href="classPos.html">Pos</a> <a class="code" href="classMonstre.html#a612efbb7cc9501cb71207908b01d3824">getVitesseMonstre</a>() <span class="keyword">const</span>; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classMonstre.html#ab7eef60694d2c1bc1626aef6fe9878ff">getTailleXMonstre</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classMonstre.html#aede40fb394561cd2027b7ef26140bbff">getTailleYMonstre</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMonstre.html#a15bc242f012ed55469b08c5fed3991dd">setTailleXMonstre</a>(<span class="keywordtype">int</span> x);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMonstre.html#ab6cd05d49e72818112500a6eb8a425da">setTailleYMonstre</a>(<span class="keywordtype">int</span> y);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMonstre.html#abef57db0a89e8490a1c8226869d43112">testRegressionMonstre</a>(); </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;};</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">#endif </span></div>
+<div class="ttc" id="aclassMonstre_html"><div class="ttname"><a href="classMonstre.html">Monstre</a></div><div class="ttdoc">classe pour gerer les monstres du jeu</div><div class="ttdef"><b>Definition:</b> Monstre.h:13</div></div>
+<div class="ttc" id="aclassMonstre_html_a15bc242f012ed55469b08c5fed3991dd"><div class="ttname"><a href="classMonstre.html#a15bc242f012ed55469b08c5fed3991dd">Monstre::setTailleXMonstre</a></div><div class="ttdeci">void setTailleXMonstre(int x)</div><div class="ttdoc">mutateur pour la largeur du monstre</div><div class="ttdef"><b>Definition:</b> Monstre.cpp:86</div></div>
+<div class="ttc" id="aclassMonstre_html_a1862b773f60cf743dc395d1a5e432c5d"><div class="ttname"><a href="classMonstre.html#a1862b773f60cf743dc395d1a5e432c5d">Monstre::getVieMonstre</a></div><div class="ttdeci">bool getVieMonstre() const</div><div class="ttdoc">Acesseur pour savoir si le monstre est en vie ou pas.</div><div class="ttdef"><b>Definition:</b> Monstre.cpp:35</div></div>
+<div class="ttc" id="aclassMonstre_html_a4473c189cfb272a024b5bf054040537c"><div class="ttname"><a href="classMonstre.html#a4473c189cfb272a024b5bf054040537c">Monstre::setDirectionMonstre</a></div><div class="ttdeci">void setDirectionMonstre(int dir)</div><div class="ttdoc">mutatateur pour la direction du monstre</div><div class="ttdef"><b>Definition:</b> Monstre.cpp:50</div></div>
+<div class="ttc" id="aclassMonstre_html_a4872d384e06eb4f9c927f4dad6960eac"><div class="ttname"><a href="classMonstre.html#a4872d384e06eb4f9c927f4dad6960eac">Monstre::getDirectionMonstre</a></div><div class="ttdeci">int getDirectionMonstre() const</div><div class="ttdoc">accesseur pour la posiiton du monstre</div><div class="ttdef"><b>Definition:</b> Monstre.cpp:45</div></div>
+<div class="ttc" id="aclassMonstre_html_a5f2ae0cf8ca337f6d6373d15b56b930d"><div class="ttname"><a href="classMonstre.html#a5f2ae0cf8ca337f6d6373d15b56b930d">Monstre::getPositionMonstre</a></div><div class="ttdeci">Pos getPositionMonstre() const</div><div class="ttdoc">accesseur : recupere la donnee membre posMonstre</div><div class="ttdef"><b>Definition:</b> Monstre.cpp:55</div></div>
+<div class="ttc" id="aclassMonstre_html_a612efbb7cc9501cb71207908b01d3824"><div class="ttname"><a href="classMonstre.html#a612efbb7cc9501cb71207908b01d3824">Monstre::getVitesseMonstre</a></div><div class="ttdeci">Pos getVitesseMonstre() const</div><div class="ttdoc">accesseur : recupere la donnee membre vitesseMonstre</div><div class="ttdef"><b>Definition:</b> Monstre.cpp:71</div></div>
+<div class="ttc" id="aclassMonstre_html_a8efe47ee8ea4b5ee8e5d3820e620059b"><div class="ttname"><a href="classMonstre.html#a8efe47ee8ea4b5ee8e5d3820e620059b">Monstre::Monstre</a></div><div class="ttdeci">Monstre()</div><div class="ttdoc">Constructeur par defaut de la classe.</div><div class="ttdef"><b>Definition:</b> Monstre.cpp:11</div></div>
+<div class="ttc" id="aclassMonstre_html_ab0c47b6d7007aeca88c81df156f3e403"><div class="ttname"><a href="classMonstre.html#ab0c47b6d7007aeca88c81df156f3e403">Monstre::setPositionMonstre</a></div><div class="ttdeci">void setPositionMonstre(int x, int y)</div><div class="ttdoc">mutateur pour la position du monstre</div><div class="ttdef"><b>Definition:</b> Monstre.cpp:60</div></div>
+<div class="ttc" id="aclassMonstre_html_ab6cd05d49e72818112500a6eb8a425da"><div class="ttname"><a href="classMonstre.html#ab6cd05d49e72818112500a6eb8a425da">Monstre::setTailleYMonstre</a></div><div class="ttdeci">void setTailleYMonstre(int y)</div><div class="ttdoc">mutateur pour la longueur du monstre</div><div class="ttdef"><b>Definition:</b> Monstre.cpp:91</div></div>
+<div class="ttc" id="aclassMonstre_html_ab7eef60694d2c1bc1626aef6fe9878ff"><div class="ttname"><a href="classMonstre.html#ab7eef60694d2c1bc1626aef6fe9878ff">Monstre::getTailleXMonstre</a></div><div class="ttdeci">int getTailleXMonstre() const</div><div class="ttdoc">accesseur pour la largeur du monstre</div><div class="ttdef"><b>Definition:</b> Monstre.cpp:76</div></div>
+<div class="ttc" id="aclassMonstre_html_abef57db0a89e8490a1c8226869d43112"><div class="ttname"><a href="classMonstre.html#abef57db0a89e8490a1c8226869d43112">Monstre::testRegressionMonstre</a></div><div class="ttdeci">void testRegressionMonstre()</div><div class="ttdoc">test regression pour les fonctionnalités de la classe monstre</div><div class="ttdef"><b>Definition:</b> Monstre.cpp:96</div></div>
+<div class="ttc" id="aclassMonstre_html_ac192a36acfc5b7bd018b777a192afb92"><div class="ttname"><a href="classMonstre.html#ac192a36acfc5b7bd018b777a192afb92">Monstre::setVieMonstre</a></div><div class="ttdeci">void setVieMonstre(bool e)</div><div class="ttdoc">Mutateur pour changer l'état de vie du monstre.</div><div class="ttdef"><b>Definition:</b> Monstre.cpp:40</div></div>
+<div class="ttc" id="aclassMonstre_html_aede40fb394561cd2027b7ef26140bbff"><div class="ttname"><a href="classMonstre.html#aede40fb394561cd2027b7ef26140bbff">Monstre::getTailleYMonstre</a></div><div class="ttdeci">int getTailleYMonstre() const</div><div class="ttdoc">accesseur pour la longueur du monstre</div><div class="ttdef"><b>Definition:</b> Monstre.cpp:81</div></div>
+<div class="ttc" id="aclassPos_html"><div class="ttname"><a href="classPos.html">Pos</a></div><div class="ttdoc">gerer des vecteurs en 2D</div><div class="ttdef"><b>Definition:</b> Pos.h:10</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

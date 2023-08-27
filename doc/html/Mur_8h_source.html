@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet:  Fichier source de src/Mur.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Projet de realisation d&#39;un jeu en 2D du LIFAPSD Lyon 1 2023</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Mur.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _Mur_H_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define _Mur_H_</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;Pos.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;cassert&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classMur.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="classMur.html">Mur</a></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">private</span>: </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="classPos.html">Pos</a> posMur;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">int</span> tailleX,tailleY;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="classMur.html#a913926c7cd2bb9c2923924107c9b0156">Mur</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="classPos.html">Pos</a> <a class="code" href="classMur.html#a18d88351644e837d61bf2f770e27c1fc">getPosMur</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classMur.html#a036e9665ad11af2ebeeaa2dd5ab20709">getTailleX</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classMur.html#a9f46721b324e8c91a5a394d11a0b9cf5">getTailleY</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMur.html#adc3ed6f44d79b22dbcdad5050f051da1">setPosMur</a>(<a class="code" href="classPos.html">Pos</a> o);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMur.html#ab47c7e1b671e140cc9fa3be7e7c1fba3">setTailleX</a>(<span class="keywordtype">int</span> x);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMur.html#ae257df23f38f83dd831e51764d13d6c5">setTailleY</a>(<span class="keywordtype">int</span> y);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMur.html#a2dba8c7bce213832b1bc54c34989081a">initMur</a>(<span class="keywordtype">int</span> px, <span class="keywordtype">int</span> py, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMur.html#a768c501e6081576e783d95eb6a7032e4">testRegressionMur</a>(); </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassMur_html"><div class="ttname"><a href="classMur.html">Mur</a></div><div class="ttdoc">Classe représentant un mur dans un jeu.</div><div class="ttdef"><b>Definition:</b> Mur.h:11</div></div>
+<div class="ttc" id="aclassMur_html_a036e9665ad11af2ebeeaa2dd5ab20709"><div class="ttname"><a href="classMur.html#a036e9665ad11af2ebeeaa2dd5ab20709">Mur::getTailleX</a></div><div class="ttdeci">int getTailleX() const</div><div class="ttdoc">accesseur pour la largeur du mur</div><div class="ttdef"><b>Definition:</b> Mur.cpp:16</div></div>
+<div class="ttc" id="aclassMur_html_a18d88351644e837d61bf2f770e27c1fc"><div class="ttname"><a href="classMur.html#a18d88351644e837d61bf2f770e27c1fc">Mur::getPosMur</a></div><div class="ttdeci">Pos getPosMur() const</div><div class="ttdoc">accesseur pour la position du mur</div><div class="ttdef"><b>Definition:</b> Mur.cpp:11</div></div>
+<div class="ttc" id="aclassMur_html_a2dba8c7bce213832b1bc54c34989081a"><div class="ttname"><a href="classMur.html#a2dba8c7bce213832b1bc54c34989081a">Mur::initMur</a></div><div class="ttdeci">void initMur(int px, int py, int x, int y)</div><div class="ttdoc">initialise un mur avec une position et une taille donnée</div><div class="ttdef"><b>Definition:</b> Mur.cpp:41</div></div>
+<div class="ttc" id="aclassMur_html_a768c501e6081576e783d95eb6a7032e4"><div class="ttname"><a href="classMur.html#a768c501e6081576e783d95eb6a7032e4">Mur::testRegressionMur</a></div><div class="ttdeci">void testRegressionMur()</div><div class="ttdoc">permet de tester les fonctionnalité de la classe mur</div><div class="ttdef"><b>Definition:</b> Mur.cpp:49</div></div>
+<div class="ttc" id="aclassMur_html_a913926c7cd2bb9c2923924107c9b0156"><div class="ttname"><a href="classMur.html#a913926c7cd2bb9c2923924107c9b0156">Mur::Mur</a></div><div class="ttdeci">Mur()</div><div class="ttdoc">constructeur par défaut de la classe Mur</div><div class="ttdef"><b>Definition:</b> Mur.cpp:3</div></div>
+<div class="ttc" id="aclassMur_html_a9f46721b324e8c91a5a394d11a0b9cf5"><div class="ttname"><a href="classMur.html#a9f46721b324e8c91a5a394d11a0b9cf5">Mur::getTailleY</a></div><div class="ttdeci">int getTailleY() const</div><div class="ttdoc">accesseur pour la longueur du mur</div><div class="ttdef"><b>Definition:</b> Mur.cpp:21</div></div>
+<div class="ttc" id="aclassMur_html_ab47c7e1b671e140cc9fa3be7e7c1fba3"><div class="ttname"><a href="classMur.html#ab47c7e1b671e140cc9fa3be7e7c1fba3">Mur::setTailleX</a></div><div class="ttdeci">void setTailleX(int x)</div><div class="ttdoc">mutateur pour la largeur du mur</div><div class="ttdef"><b>Definition:</b> Mur.cpp:31</div></div>
+<div class="ttc" id="aclassMur_html_adc3ed6f44d79b22dbcdad5050f051da1"><div class="ttname"><a href="classMur.html#adc3ed6f44d79b22dbcdad5050f051da1">Mur::setPosMur</a></div><div class="ttdeci">void setPosMur(Pos o)</div><div class="ttdoc">mutateur pour la position du mur</div><div class="ttdef"><b>Definition:</b> Mur.cpp:26</div></div>
+<div class="ttc" id="aclassMur_html_ae257df23f38f83dd831e51764d13d6c5"><div class="ttname"><a href="classMur.html#ae257df23f38f83dd831e51764d13d6c5">Mur::setTailleY</a></div><div class="ttdeci">void setTailleY(int y)</div><div class="ttdoc">mutateur pour la longueur du mur</div><div class="ttdef"><b>Definition:</b> Mur.cpp:36</div></div>
+<div class="ttc" id="aclassPos_html"><div class="ttname"><a href="classPos.html">Pos</a></div><div class="ttdoc">gerer des vecteurs en 2D</div><div class="ttdef"><b>Definition:</b> Pos.h:10</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet:  Fichier source de src/Arme.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Projet de realisation d&#39;un jeu en 2D du LIFAPSD Lyon 1 2023</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Arme.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _ARME_H_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define _ARME_H_</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;Pos.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;math.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;assert.h&gt;</span> </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> G = 10;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> dt = 1;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classArme.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="classArme.html">Arme</a> </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="classPos.html">Pos</a> positionArme; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="classPos.html">Pos</a>  vitesseArme; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="classPos.html">Pos</a> forceArme; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">int</span> tailleXArme; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">int</span> tailleYArme; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">int</span> masseArme; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">bool</span> joueurALancerArme; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">int</span> directionArme;  </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="classArme.html#afb975397e0624d374e759ef586f6a785">Arme</a>(); </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="classArme.html#afb975397e0624d374e759ef586f6a785">Arme</a> (<a class="code" href="classPos.html">Pos</a> p, <a class="code" href="classPos.html">Pos</a> v, <a class="code" href="classPos.html">Pos</a> f, <span class="keywordtype">int</span> m, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">bool</span> e); </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="classPos.html">Pos</a> <a class="code" href="classArme.html#a1f78fba7240c6724c21b5cf3a6539c0a">getPositionArme</a>() <span class="keyword">const</span>; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classArme.html#a5057b0c386503992c6fe44273915c356">setPositionArme</a>(<a class="code" href="classPos.html">Pos</a> p); </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="classPos.html">Pos</a> <a class="code" href="classArme.html#a06a1fdcb8b3bccba8d5e6162b160fa79">getVitesseArme</a>() <span class="keyword">const</span>; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classArme.html#ab48e87b92ea04044dd460b1d86d771e0">setVitesseArme</a>(<a class="code" href="classPos.html">Pos</a> v);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="classPos.html">Pos</a> <a class="code" href="classArme.html#a916bad43ec3fc652f0cc0006501c2468">getForceArme</a>() <span class="keyword">const</span>; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classArme.html#a7d6b8795f06b0c898d6132abb62416ff">setForceArme</a>(<a class="code" href="classPos.html">Pos</a> f); </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classArme.html#ad7975044b907d9c800da1e9812ca0970">getTailleXArme</a>() <span class="keyword">const</span>; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classArme.html#aa13490ce2f356f2b574651ffc3ae2f0b">setTailleXArme</a>(<span class="keywordtype">int</span> x); </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classArme.html#aeb1bcef037a4d91813a303cace5030fa">getTailleYArme</a> () <span class="keyword">const</span>; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classArme.html#a80c53adc82d8cea29b3ccc748f6ac41e">setTailleYArme</a>(<span class="keywordtype">int</span> y); </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classArme.html#a6dd2ef4346618d53684d11de6fc82df1">getJoueurLancerArme</a>() <span class="keyword">const</span>; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classArme.html#a99653fc340ccf8a21c865c22708de2db">setJoueurLancerArme</a>(<span class="keywordtype">bool</span> e); </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classArme.html#a8eda051f5d564778e97a61dce426526b">getDirectionArme</a>() <span class="keyword">const</span>; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classArme.html#af9fd5319bb32fe0a37ac8c7227d5fcf1">setDirectionArme</a>(<span class="keywordtype">int</span> dir); </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classArme.html#a486a48c9edb24872050d81d1abc1c305">getMasseArme</a>() <span class="keyword">const</span>; </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classArme.html#a4d92c12669c9a865ccc18a92af7a836b">setMasseArme</a>(<span class="keywordtype">int</span> m); </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classArme.html#a61dc60a774e5e13d1791be96fba50305">addForce</a>(<a class="code" href="classPos.html">Pos</a> F); </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classArme.html#a36dc9e139420e003a054692ae1fc423e">mvtArme</a>(); </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classArme.html#a720cc9b192705f343c18e4c78fd712b3">collisionArmeMurs</a>(<span class="keywordtype">int</span> dimension, <span class="keywordtype">int</span> tailleXmurs, <span class="keywordtype">int</span> tailleYmurs); </div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classArme.html#ac51cf7a8c991f703041e91e823e75d0f">collisionArmeEntite</a>(<a class="code" href="classPos.html">Pos</a> p, <span class="keywordtype">int</span> tailleX, <span class="keywordtype">int</span> tailleY); </div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classArme.html#ad60379ceeef01b2dcf912482b017d7e3">lancerDirectionArme</a>(<span class="keywordtype">int</span> direction); </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classArme.html#a976203e084734d84f16208160e14b88b">testRegressionArme</a>(); </div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;};</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassArme_html"><div class="ttname"><a href="classArme.html">Arme</a></div><div class="ttdoc">classe pour gerer les fonctionalités des armes</div><div class="ttdef"><b>Definition:</b> Arme.h:17</div></div>
+<div class="ttc" id="aclassArme_html_a06a1fdcb8b3bccba8d5e6162b160fa79"><div class="ttname"><a href="classArme.html#a06a1fdcb8b3bccba8d5e6162b160fa79">Arme::getVitesseArme</a></div><div class="ttdeci">Pos getVitesseArme() const</div><div class="ttdoc">Accesseur pour récuperer la vitesse de l'arme.</div><div class="ttdef"><b>Definition:</b> Arme.cpp:39</div></div>
+<div class="ttc" id="aclassArme_html_a1f78fba7240c6724c21b5cf3a6539c0a"><div class="ttname"><a href="classArme.html#a1f78fba7240c6724c21b5cf3a6539c0a">Arme::getPositionArme</a></div><div class="ttdeci">Pos getPositionArme() const</div><div class="ttdoc">Accesseur pour récuperer la position de l'arme</div><div class="ttdef"><b>Definition:</b> Arme.cpp:29</div></div>
+<div class="ttc" id="aclassArme_html_a36dc9e139420e003a054692ae1fc423e"><div class="ttname"><a href="classArme.html#a36dc9e139420e003a054692ae1fc423e">Arme::mvtArme</a></div><div class="ttdeci">void mvtArme()</div><div class="ttdoc">permet de mettre en mouvement l'arme</div><div class="ttdef"><b>Definition:</b> Arme.cpp:114</div></div>
+<div class="ttc" id="aclassArme_html_a486a48c9edb24872050d81d1abc1c305"><div class="ttname"><a href="classArme.html#a486a48c9edb24872050d81d1abc1c305">Arme::getMasseArme</a></div><div class="ttdeci">int getMasseArme() const</div><div class="ttdoc">Accesseur pour recuperer la masse de l'arme.</div><div class="ttdef"><b>Definition:</b> Arme.cpp:99</div></div>
+<div class="ttc" id="aclassArme_html_a4d92c12669c9a865ccc18a92af7a836b"><div class="ttname"><a href="classArme.html#a4d92c12669c9a865ccc18a92af7a836b">Arme::setMasseArme</a></div><div class="ttdeci">void setMasseArme(int m)</div><div class="ttdoc">Mutateur pour modifier la masse de l'arme.</div><div class="ttdef"><b>Definition:</b> Arme.cpp:104</div></div>
+<div class="ttc" id="aclassArme_html_a5057b0c386503992c6fe44273915c356"><div class="ttname"><a href="classArme.html#a5057b0c386503992c6fe44273915c356">Arme::setPositionArme</a></div><div class="ttdeci">void setPositionArme(Pos p)</div><div class="ttdoc">Mutatateur pour changer la position de l'arme.</div><div class="ttdef"><b>Definition:</b> Arme.cpp:34</div></div>
+<div class="ttc" id="aclassArme_html_a61dc60a774e5e13d1791be96fba50305"><div class="ttname"><a href="classArme.html#a61dc60a774e5e13d1791be96fba50305">Arme::addForce</a></div><div class="ttdeci">void addForce(Pos F)</div><div class="ttdoc">rajoute une force à la force d'une arme</div><div class="ttdef"><b>Definition:</b> Arme.cpp:109</div></div>
+<div class="ttc" id="aclassArme_html_a6dd2ef4346618d53684d11de6fc82df1"><div class="ttname"><a href="classArme.html#a6dd2ef4346618d53684d11de6fc82df1">Arme::getJoueurLancerArme</a></div><div class="ttdeci">bool getJoueurLancerArme() const</div><div class="ttdoc">Accesseur pour savoir si le joueur a lancé l'arme.</div><div class="ttdef"><b>Definition:</b> Arme.cpp:79</div></div>
+<div class="ttc" id="aclassArme_html_a720cc9b192705f343c18e4c78fd712b3"><div class="ttname"><a href="classArme.html#a720cc9b192705f343c18e4c78fd712b3">Arme::collisionArmeMurs</a></div><div class="ttdeci">bool collisionArmeMurs(int dimension, int tailleXmurs, int tailleYmurs)</div><div class="ttdoc">detecte la collision entre l'arme et les cotés de la piece</div><div class="ttdef"><b>Definition:</b> Arme.cpp:128</div></div>
+<div class="ttc" id="aclassArme_html_a7d6b8795f06b0c898d6132abb62416ff"><div class="ttname"><a href="classArme.html#a7d6b8795f06b0c898d6132abb62416ff">Arme::setForceArme</a></div><div class="ttdeci">void setForceArme(Pos f)</div><div class="ttdoc">Mutateur pour changer la foce de l'arme.</div><div class="ttdef"><b>Definition:</b> Arme.cpp:54</div></div>
+<div class="ttc" id="aclassArme_html_a80c53adc82d8cea29b3ccc748f6ac41e"><div class="ttname"><a href="classArme.html#a80c53adc82d8cea29b3ccc748f6ac41e">Arme::setTailleYArme</a></div><div class="ttdeci">void setTailleYArme(int y)</div><div class="ttdoc">Mutateur pour changer la longeuer de l'arme.</div><div class="ttdef"><b>Definition:</b> Arme.cpp:74</div></div>
+<div class="ttc" id="aclassArme_html_a8eda051f5d564778e97a61dce426526b"><div class="ttname"><a href="classArme.html#a8eda051f5d564778e97a61dce426526b">Arme::getDirectionArme</a></div><div class="ttdeci">int getDirectionArme() const</div><div class="ttdoc">Accesseur pour recupérer la direction du mouvement de l'arme.</div><div class="ttdef"><b>Definition:</b> Arme.cpp:89</div></div>
+<div class="ttc" id="aclassArme_html_a916bad43ec3fc652f0cc0006501c2468"><div class="ttname"><a href="classArme.html#a916bad43ec3fc652f0cc0006501c2468">Arme::getForceArme</a></div><div class="ttdeci">Pos getForceArme() const</div><div class="ttdoc">Accesseur pour récuperer la force de l'arme.</div><div class="ttdef"><b>Definition:</b> Arme.cpp:49</div></div>
+<div class="ttc" id="aclassArme_html_a976203e084734d84f16208160e14b88b"><div class="ttname"><a href="classArme.html#a976203e084734d84f16208160e14b88b">Arme::testRegressionArme</a></div><div class="ttdeci">void testRegressionArme()</div><div class="ttdoc">fonction permettant de tester les utilités de la classe Obstacle</div><div class="ttdef"><b>Definition:</b> Arme.cpp:196</div></div>
+<div class="ttc" id="aclassArme_html_a99653fc340ccf8a21c865c22708de2db"><div class="ttname"><a href="classArme.html#a99653fc340ccf8a21c865c22708de2db">Arme::setJoueurLancerArme</a></div><div class="ttdeci">void setJoueurLancerArme(bool e)</div><div class="ttdoc">Mutateur pour changer la valeur du booleen pour savoir si le joueur a lancé l'arme.</div><div class="ttdef"><b>Definition:</b> Arme.cpp:84</div></div>
+<div class="ttc" id="aclassArme_html_aa13490ce2f356f2b574651ffc3ae2f0b"><div class="ttname"><a href="classArme.html#aa13490ce2f356f2b574651ffc3ae2f0b">Arme::setTailleXArme</a></div><div class="ttdeci">void setTailleXArme(int x)</div><div class="ttdoc">Mutateur pour changer la largeur de l'arme.</div><div class="ttdef"><b>Definition:</b> Arme.cpp:64</div></div>
+<div class="ttc" id="aclassArme_html_ab48e87b92ea04044dd460b1d86d771e0"><div class="ttname"><a href="classArme.html#ab48e87b92ea04044dd460b1d86d771e0">Arme::setVitesseArme</a></div><div class="ttdeci">void setVitesseArme(Pos v)</div><div class="ttdoc">Mutateur pour changer la vitesse de l'arme.</div><div class="ttdef"><b>Definition:</b> Arme.cpp:44</div></div>
+<div class="ttc" id="aclassArme_html_ac51cf7a8c991f703041e91e823e75d0f"><div class="ttname"><a href="classArme.html#ac51cf7a8c991f703041e91e823e75d0f">Arme::collisionArmeEntite</a></div><div class="ttdeci">bool collisionArmeEntite(Pos p, int tailleX, int tailleY)</div><div class="ttdoc">permet de détecter la collision entre l'arme et une entité du jeu</div><div class="ttdef"><b>Definition:</b> Arme.cpp:133</div></div>
+<div class="ttc" id="aclassArme_html_ad60379ceeef01b2dcf912482b017d7e3"><div class="ttname"><a href="classArme.html#ad60379ceeef01b2dcf912482b017d7e3">Arme::lancerDirectionArme</a></div><div class="ttdeci">void lancerDirectionArme(int direction)</div><div class="ttdoc">permet de lancer l'arme dans la direction souhaité par le joueur</div><div class="ttdef"><b>Definition:</b> Arme.cpp:147</div></div>
+<div class="ttc" id="aclassArme_html_ad7975044b907d9c800da1e9812ca0970"><div class="ttname"><a href="classArme.html#ad7975044b907d9c800da1e9812ca0970">Arme::getTailleXArme</a></div><div class="ttdeci">int getTailleXArme() const</div><div class="ttdoc">Accesseur pour récuperer la largeur de l'arme.</div><div class="ttdef"><b>Definition:</b> Arme.cpp:59</div></div>
+<div class="ttc" id="aclassArme_html_aeb1bcef037a4d91813a303cace5030fa"><div class="ttname"><a href="classArme.html#aeb1bcef037a4d91813a303cace5030fa">Arme::getTailleYArme</a></div><div class="ttdeci">int getTailleYArme() const</div><div class="ttdoc">Accesseur pour récuperer la longueur de l'arme.</div><div class="ttdef"><b>Definition:</b> Arme.cpp:69</div></div>
+<div class="ttc" id="aclassArme_html_af9fd5319bb32fe0a37ac8c7227d5fcf1"><div class="ttname"><a href="classArme.html#af9fd5319bb32fe0a37ac8c7227d5fcf1">Arme::setDirectionArme</a></div><div class="ttdeci">void setDirectionArme(int dir)</div><div class="ttdoc">Mutatateur pour modifier la direction de l'arme.</div><div class="ttdef"><b>Definition:</b> Arme.cpp:94</div></div>
+<div class="ttc" id="aclassArme_html_afb975397e0624d374e759ef586f6a785"><div class="ttname"><a href="classArme.html#afb975397e0624d374e759ef586f6a785">Arme::Arme</a></div><div class="ttdeci">Arme()</div><div class="ttdoc">constructeur par défaut de la classe arme</div><div class="ttdef"><b>Definition:</b> Arme.cpp:4</div></div>
+<div class="ttc" id="aclassPos_html"><div class="ttname"><a href="classPos.html">Pos</a></div><div class="ttdoc">gerer des vecteurs en 2D</div><div class="ttdef"><b>Definition:</b> Pos.h:10</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

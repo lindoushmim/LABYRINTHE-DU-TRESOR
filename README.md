@@ -1,12 +1,12 @@
 # projet LIFAPCD - Information
 
 Labyrinthe du Trésor est jeu en C/C++ réalisé en deuxieme année de la licence informatique. 
-Le jeu se joue sur une console SDL. Le joueur doit atteindre le trésor se trouvant dans une piece afin de gagner. 
+Il se joue sur une console SDL. Le joueur doit atteindre le trésor se trouvant dans une piece afin de gagner. 
 
 
 ## LABYRINTHE DU TRÉSOR 
 
-Dans ce jeu, vous incarnez un aventurier intrépide qui doit explorer un vaste monde rempli de dangers et de mystères. Chaque pièce du labyrinthe offre des défis surmonter. Votre but ultime est de trouver le trésor légendaire qui se trouve quelque part dans le labyrinthe, mais attention, les gardiens du trésor ne vous laisseront pas partir facilement !
+Dans ce jeu, vous incarnez un aventurier intrépide qui doit explorer un vaste monde rempli de dangers et de mystères. Chaque pièce du labyrinthe offre des défis à surmonter. Votre but ultime est d'atteindre le trésor légendaire qui se trouve quelque part dans le labyrinthe, mais attention, les gardiens du trésor ne vous laisseront pas partir facilement !
 
 <img src="data/image/imReadme.png" alt="image du jeu" width="500" height="500">
 

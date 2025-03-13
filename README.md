@@ -8,9 +8,9 @@ Il se joue sur une console SDL. Le joueur doit atteindre le trésor se trouvant 
 
 Dans ce jeu, vous incarnez un aventurier intrépide qui doit explorer un vaste monde rempli de dangers et de mystères. Chaque pièce du labyrinthe offre des défis à surmonter. Votre but ultime est d'atteindre le trésor légendaire qui se trouve quelque part dans le labyrinthe, mais attention, les gardiens du trésor ne vous laisseront pas partir facilement !
 
-<img src="data/image/imReadme.png" alt="image du jeu" width="500" height="500">
-
-
+<p align="center">
+    <img src="data/image/imReadme.png" alt="image du jeu" width="500" height="500">
+</p>
 
 ## COMMANDE DU JEU 
 
